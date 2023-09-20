@@ -7,18 +7,6 @@ Empowering Vision-Language Models to Follow Interleaved Vision-Language Instruct
 </h1>
 
 <div align="center">
-Juncheng Li<sup>1,2</sup>*, Kaihang Pan<sup>1</sup>*, Zhiqi Ge<sup>1</sup>*, Minghe Gao<sup>1</sup>*, Hanwang Zhang<sup>3</sup>, Wei Ji<sup>2</sup>, Wenqiao Zhang<sup>2</sup>, 
- 
- Tat-Seng Chua<sup>2</sup>, Siliang Tang<sup>1&dagger;</sup>, Yueting Zhuang<sup>1&dagger;</sup>
-
-
-<sup>1</sup>Zhejiang University, <sup>2</sup>National University of Singapore, <sup>3</sup>Nanyang Technological University
-
-\*Equal Contribution. <sup>&dagger;</sup>Corresponding Authors
-
-<a href='https://arxiv.org/abs/2308.04152'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> 
-
-<a>English</a> | <a href="README_zh.md">简体中文</a>
 
 </div>
 
@@ -52,7 +40,6 @@ Cheetor demonstrates strong abilities to perform reasoning over complicated inte
 
 Git clone our repository and creating conda environment:
 ```bash
-git clone https://github.com/DCDmllm/Cheetah.git
 cd Cheetah/Cheetah
 conda create -n cheetah python=3.8
 conda activate cheetah
@@ -88,17 +75,6 @@ python test_cheetah_vicuna.py --cfg-path eval_configs/cheetah_eval_vicuna.yaml -
 ```
 
 And in the near future, we will also demonstrate how to launch the gradio demo of Cheetor locally.
-
-## Citation
-If you found this work useful, please consider giving this repository a star and citing our paper as followed:
-```
-@article{li2023empowering,
-  title={Empowering Vision-Language Models to Follow Interleaved Vision-Language Instructions},
-  author={Li, Juncheng and Pan, Kaihang and Ge, Zhiqi and Gao, Minghe and Zhang, Hanwang and Ji, Wei and Zhang, Wenqiao and Chua, Tat-Seng and Tang, Siliang and Zhuang, Yueting},
-  journal={arXiv preprint arXiv:2308.04152},
-  year={2023}
-}
-```
 
 ## Acknowledgment
 We've built upon the [LAVIS](https://github.com/salesforce/LAVIS/tree/main) library by Salesforce for the development of our code.
