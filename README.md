@@ -2,19 +2,20 @@
 <img src="figs/leopard_logo.svg"  width="60%">
 </p>
 <h1 align = "center">
-Fine-tuning Multimodal LLMS to Follow Zero-shot Demonstrative Instructions
+Fine-tuning Multimodal LLMs to Follow Zero-shot Demonstrative Instructions
 </h1>
 
 ## DEMON Benchmark
 
-To facilitate research in interleaved vision-language instruction following, we build **DEMON** , a comprehensive benchmark
-for demonstrative instruction understanding, covering 31 diverse tasks across 7 categories.
+To comprehensively benchmark the demonstrative instruction following ability, we extensively gather a wide variety of multi-modal datasets from different fields and scenarios. 
 
 DEMON has three important properties: 
 
-- **Interleaved vision-language context:** all the instructions contain sequences of inter-related images and texts, such as storyboards with scripts, textbooks with diagrams. 
-- **Diverse forms of complex instructions:** the instructions range from predicting dialogue for comics, to discovering differences between surveillance images, and to conversational embodied tasks. 
-- **Vast range of instruction-following scenarios:** the benchmark covers multiple application scenarios, including cartoons, industrial images, driving recording, etc.
+- **Demonstrative vision-language context:** all the instructions contain sequences of inter-related images and texts, such as storyboards with scripts, and textbooks with diagrams.
+- **Diverse forms of complex instructions:** the instructions range from designing panels for comics, to discovering differences
+between surveillance images, and to conversational embodied tasks. 
+- **Vast range of instruction-following scenarios:** the benchmark covers multiple practical scenarios, including cartoons, indus-
+trial visuals, driving recordings, recipes, etc
 
 ![images](figs/demo.svg)
 

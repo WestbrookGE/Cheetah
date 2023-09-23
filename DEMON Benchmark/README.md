@@ -1,15 +1,17 @@
 # DEMON Benchmark
-We build DEMON, a comprehensive benchmark for demonstrative instruction understanding, covering 31 diverse tasks across 7 categories. 
+To comprehensively benchmark the demonstrative instruction following ability, we extensively gather a wide variety of multi-modal datasets from different fields and scenarios. 
 
 ![example](./demo.svg)
 Download Link:
-- [Google Drive](https://drive.google.com/drive/folders/1x3O7brcJi4XJS2c6LLUpG5Xx0mg1WkRG?usp=drive_link)
+- [Google Drive](https://drive.google.com/file/d/1jWI3yoEnOTk5NZTBFYKfdP8DxBl_9zDE/view?usp=drive_link)
 
 DEMON has three important properties: 
 
-- **Interleaved vision-language context:** all the instructions contain sequences of inter-related images and texts, such as storyboards with scripts, textbooks with diagrams. 
-- **Diverse forms of complex instructions:** the instructions range from predicting dialogue for comics, to discovering differences between surveillance images, and to conversational embodied tasks. 
-- **Vast range of instruction-following scenarios:** the benchmark covers multiple application scenarios, including cartoons, industrial images, driving recording, etc...
+- **Demonstrative vision-language context:** all the instructions contain sequences of inter-related images and texts, such as storyboards with scripts, and textbooks with diagrams.
+- **Diverse forms of complex instructions:** the instructions range from designing panels for comics, to discovering differences
+between surveillance images, and to conversational embodied tasks. 
+- **Vast range of instruction-following scenarios:** the benchmark covers multiple practical scenarios, including cartoons, indus-
+trial visuals, driving recordings, recipes, etc
 
 |         | Tasks | Scenarios | Images | Instructions | Avg. Images/Instructions | Avg. Words/Instruction |
 | ------- | ----- | --------- | ------ | ------------ | ------------------------ | ---------------------- |
