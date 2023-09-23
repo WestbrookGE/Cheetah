@@ -20,7 +20,7 @@ def parse_args():
     parser.add_argument("--cfg-path", required=True, help="path to configuration file.")
     parser.add_argument("--gpu-id", type=int, default=0, help="specify the gpu to load the model.")
     parser.add_argument('--batch-image', type=int, required=False, default=30)
-    parser.add_argument('--i4-dir', type=str, required=True)
+    parser.add_argument('--demon-dir', type=str, required=True)
     parser.add_argument('--dataset', type=str, required=True)
     parser.add_argument("--result-dir",type=str,required=True)
     parser.add_argument(
@@ -96,10 +96,10 @@ def split_data(data):
 
 args = parse_args()
 
-i4_dir = args.i4_dir
+demon_dir = args.demon_dir
 dataset_name = args.dataset
 batch_image = args.batch_image
-dataset_dir = os.path.join(i4_dir, dataset_name,'core')
+dataset_dir = os.path.join(demon_dir, dataset_name,'core')
 img_dir  = os.path.join(dataset_dir,'images')
 output_dir = os.path.join(args.result_dir,dataset_name)
 model_name = args.result_dir.split('/')[-1]

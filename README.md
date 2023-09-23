@@ -1,20 +1,14 @@
-<p align="center">
-<img src="figs/cheetah_logo.png"  width="60%">
-</p>
 
 <h1 align = "center">
-Empowering Vision-Language Models to Follow Interleaved Vision-Language Instructions
+Fine-tuning Multimodal LLMS to Follow Zero-shot Demonstrative Instructions
 </h1>
 
-<div align="center">
+## DEMON Benchmark
 
-</div>
+To facilitate research in interleaved vision-language instruction following, we build **DEMON** , a comprehensive benchmark
+for demonstrative instruction understanding, covering 31 diverse tasks across 7 categories.
 
-## I4 Benchmark
-
-To facilitate research in interleaved vision-language instruction following, we build **I4** (semantically **I**nterconnected, **I**nterleaved **I**mage-Text **I**nstruction-Following), an extensive large-scale benchmark of 31 tasks with diverse instructions in a uniﬁed instruction-response format, covering 20 diverse scenarios.
-
-I4 has three important properties: 
+DEMON has three important properties: 
 
 - **Interleaved vision-language context:** all the instructions contain sequences of inter-related images and texts, such as storyboards with scripts, textbooks with diagrams. 
 - **Diverse forms of complex instructions:** the instructions range from predicting dialogue for comics, to discovering differences between surveillance images, and to conversational embodied tasks. 
@@ -22,14 +16,14 @@ I4 has three important properties:
 
 ![images](figs/demo.svg)
 
-## Cheetor: a multi-modal large language model empowered by controllable knowledge re-injection
-Cheetor is a Transformer-based multi-modal large language model empowered by controllable knowledge re-injection, which can effectively handle a wide variety of interleaved vision-language instructions.
+## Visual Prompt Generator Complete
+VPG-C is built upon the frozen LLM and vision encoder. We adopt the widely used Q-Former from BLIP-2 as our visual prompt generator. VPG-C first uses the intermediate output of the LLM to infer instruction-specific guidance. This then assists the VPG in attending the missing visual details from the images. By merging these residual details back via a residual connection, VPG-C  achieves a thorough grasp of the demonstrative instruction
 
-![images](figs/framework.png)
+![images](figs/vpgc-model.svg)
 
 
 ## Cases
-Cheetor demonstrates strong abilities to perform reasoning over complicated interleaved vision-language instructions. For instance, in **(a)**, Cheetor is able to keenly identify the connections between the images and thereby infer the reason that causes this unusual phenomenon. In **(b, c)**, Cheetor can reasonably infer the relations among the images and understand the metaphorical implications they want to convey. In **(e, f)**, Cheetor exhibits the ability to comprehend absurd objects through multi-modal conversations with humans.
+VPG-C demonstrates strong abilities to perform reasoning over complicated interleaved vision-language instructions. For instance, in **(a)**, VPG-C is able to keenly identify the connections between the images and thereby infer the reason that causes this unusual phenomenon. In **(b, c)**, VPG-C can reasonably infer the relations among the images and understand the metaphorical implications they want to convey. In **(e, f)**, VPG-C exhibits the ability to comprehend absurd objects through multi-modal conversations with humans.
 
 
 ![images](figs/case.svg)
@@ -78,6 +72,3 @@ And in the near future, we will also demonstrate how to launch the gradio demo o
 
 ## Acknowledgment
 We've built upon the [LAVIS](https://github.com/salesforce/LAVIS/tree/main) library by Salesforce for the development of our code.
-
-## License 
-This repository is under [BSD 3-Clause License](https://github.com/DCDmllm/Cheetah/blob/main/license.md).

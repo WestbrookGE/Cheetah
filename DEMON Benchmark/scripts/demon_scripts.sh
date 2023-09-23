@@ -15,7 +15,7 @@ all_dataset="MMCoQA ALFRED\
  Fashion200K NLVR2 nuscenes VizWiz MIT-States_StateCoherence MIT-States_PropertyCoherence VISION RecipeQA_ImageCoherence"
 
 cfg=../../Cheetah/eval_configs/cheetah_eval_llama2.yaml
-i4_dir=
+demon_dir=
 result_dir=
 
 for dataset in $all_dataset
@@ -26,7 +26,7 @@ do
     else
         batch=24
     fi
-    python ../../Cheetah/i4_cheetah_llama2.py --cfg-path $cfg --gpu-id 0 --batch-image $batch --i4-dir $i4_dir --dataset $dataset --result-dir $result_dir
+    python ../../Cheetah/demon_cheetah_llama2.py --cfg-path $cfg --gpu-id 0 --batch-image $batch --demon-dir $demon_dir --dataset $dataset --result-dir $result_dir
     python evaluate.py --i4-dir $i4_dir --dataset $dataset --result-dir $result_dir
 done
-python i4_score.py --result_dir $result_dir
+python demon_score.py --result_dir $result_dir
