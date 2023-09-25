@@ -27,7 +27,7 @@ VPG-C is built upon the frozen LLM and vision encoder. We adopt the widely used 
 Empowered by VPG-C, which can effectively handle a wide variety of interleaved vision-language instructions, we develop Cheetah, a Transformer-based multi-modal large language model.
 
 ## Cases
-Cheetah demonstrates strong abilities to perform reasoning over complicated interleaved vision-language instructions. For instance, in **(a)**, VPG-C is able to keenly identify the connections between the images and thereby infer the reason that causes this unusual phenomenon. In **(b, c)**, VPG-C can reasonably infer the relations among the images and understand the metaphorical implications they want to convey. In **(e, f)**, VPG-C exhibits the ability to comprehend absurd objects through multi-modal conversations with humans.
+Cheetah demonstrates strong abilities to perform reasoning over complicated interleaved vision-language instructions. For instance, in **(a)**, Cheetah is able to keenly identify the connections between the images and thereby infer the reason that causes this unusual phenomenon. In **(b, c)**, Cheetah can reasonably infer the relations among the images and understand the metaphorical implications they want to convey. In **(e, f)**, Cheetah exhibits the ability to comprehend absurd objects through multi-modal conversations with humans.
 
 
 ![images](figs/case.svg)
